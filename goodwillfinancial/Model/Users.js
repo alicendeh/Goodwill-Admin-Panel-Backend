@@ -3,11 +3,11 @@ const mongoose = require("mongoose");
 const UserSchema = mongoose.Schema({
   name: {
     type: String,
-    required: "true",
+    required: ["true", "name is required"],
   },
   email: {
     type: String,
-    required: true,
+    required: [true, "email is required"],
     unique: true,
     match: [
       /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
@@ -16,11 +16,11 @@ const UserSchema = mongoose.Schema({
   },
   tel: {
     type: Number,
-    required: "true",
+    required: ["true", "tel is required"],
   },
   amount: {
     type: Number,
-    required: "true",
+    required: ["true", "amount is required"],
   },
 
   date: {

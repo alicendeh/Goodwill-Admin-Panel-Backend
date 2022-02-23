@@ -8,7 +8,7 @@ const Goodwill = async () => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
-    console.log("Succesfully connection to Dream Institutes database");
+    console.log("Succesfully connection to Goodwill financials database");
   } catch (err) {
     console.log(err.message);
     res

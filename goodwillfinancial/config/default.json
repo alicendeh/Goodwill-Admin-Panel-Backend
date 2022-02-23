@@ -1,4 +1,4 @@
 {
   "secret": "!#9ad@fqp@org",
-  "mongoURI": "mongodb+srv://alice:dip@cluster0.5mzqe.mongodb.net/DreamInstituesDatabase?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://goodwill:goodwill@cluster0.g42tf.mongodb.net/GoodwillDB?retryWrites=true&w=majority"
 }

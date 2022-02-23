@@ -12,6 +12,7 @@ router.post("/CreateAccount", async (req, res) => {
   try {
     const { name, email, tel, amount } = req.body;
 
+    
     let user = await Users.findOne({ email });
 
     if (user) {
