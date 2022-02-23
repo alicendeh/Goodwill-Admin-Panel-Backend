@@ -12,7 +12,6 @@ router.post("/CreateAccount", async (req, res) => {
   try {
     const { name, email, tel, amount } = req.body;
 
-    
     let user = await Users.findOne({ email });
 
     if (user) {
@@ -35,5 +34,18 @@ router.post("/CreateAccount", async (req, res) => {
     res.status(500).json({ msg: "Server Error" });
   }
 });
+
+//view all users
+router.get("/viewAll", async (req, res) => {
+  try {
+    const users = await Users.find({});
+    res.status(200).json({ users });
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).json({ msg: "Server Error" });
+  }
+});
+
+//edit user info
 
 module.exports = router;
