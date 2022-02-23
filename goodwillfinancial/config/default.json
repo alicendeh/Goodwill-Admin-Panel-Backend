@@ -1,0 +1,4 @@
+{
+  "secret": "!#9ad@fqp@org",
+  "mongoURI": "mongodb+srv://alice:dip@cluster0.5mzqe.mongodb.net/DreamInstituesDatabase?retryWrites=true&w=majority"
+}
